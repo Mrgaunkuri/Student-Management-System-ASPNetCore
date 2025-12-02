@@ -15,7 +15,7 @@ A simple student management web app built with ASP.NET Core (.NET 9). It provide
 
 ## Quick start (local)
 1. Clone the repo:
-   - git clone https://github.com/Mrgaunkuri/A-simple-Student-Management-System-built-using-ASP.NET-Core-MVC-with-full-CRUD-operations.
+   - git clone https:[//github.com/Mrgaunkuri/A-simple-Student-Management-System-built-using-ASP.NET-Core-MVC-with-full-CRUD-operations.](https://github.com/Mrgaunkuri/Student-Management-System-ASPNetCore.git)
 2. Configure database:
    - Copy `appsettings.example.json` → `appsettings.Development.json` and set `DefaultConnection`.
 3. Apply database migrations (if present) or enable automatic migrations:
