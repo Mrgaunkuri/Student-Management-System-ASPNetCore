@@ -1,0 +1,28 @@
+﻿@model Student_management_system.model.students
+@{
+    ViewData["Title"] = "Delete Student";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card card-custom border-danger border-top border-4">
+                <div class="card-body p-5 text-center">
+                    <i class="bi bi-exclamation-circle text-danger display-1 mb-4"></i>
+                    <h3 class="card-title mb-3">Are you sure?</h3>
+                    <p class="text-muted mb-4">
+                        Do you really want to delete the student record for <strong>@Model.FullName</strong>? This process cannot be undone.
+                    </p>
+                    
+                    <form asp-action="DeleteConfirmed" method="post">
+                        <input type="hidden" asp-for="Id" />
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-danger btn-lg">Delete Record</button>
+                            <a asp-action="Index" class="btn btn-light btn-lg">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
